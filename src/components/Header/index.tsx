@@ -12,9 +12,12 @@ export function Header() {
     <>
       <div className="relative h-screen w-full">
         <div className="absolute left-0 top-0 z-[1] h-screen w-full bg-black/40" />
+        {/* Video */}
         <video loop autoPlay muted className="absolute left-0 top-0 h-full w-full object-cover">
           <source src={homeBg} type="video/mp4" />
         </video>
+
+        {/* SectionText component */}
         <div className="absolute bottom-0 left-[10%] right-0 top-0 z-[1] flex items-center sm:left-[18%]">
           <SectionText
             title="Para quem é dono do próprio tempo"
