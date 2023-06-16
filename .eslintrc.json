@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "@rocketseat/eslint-config/react",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier", "tailwindcss"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "prettier/prettier": "error"
+  }
+}
