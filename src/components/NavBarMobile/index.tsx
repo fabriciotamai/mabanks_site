@@ -1,5 +1,5 @@
 // Images
-import logoMobile from '../../assets/images/logo-mobile.png';
+import logoMobile from '../../assets/images/logo-mobile.webp';
 
 // Icons
 import { X } from 'lucide-react';
@@ -28,7 +28,7 @@ export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
             <img src={logoMobile} width={70} height={45} />
           </a>
 
-          <Button type={false} title="Abrir conta" color="mobile" />
+          <Button type={false} title="Abrir conta" color="mobile" url="#" />
         </div>
 
         {/* ----------- NavItems mobile -----------*/}

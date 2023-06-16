@@ -6,11 +6,12 @@ interface SectionTextProps {
   description: string;
   btnType: boolean;
   btnTitle: string;
-  btnIcon: React.ReactElement;
+  btnIcon?: React.ReactElement;
   btnColor: 'mobile' | 'desktop';
   btnUrl: string;
-  descStyle: 'full' | 'md' | 'sm';
-  titleStyle: 'full' | 'md' | 'sm';
+  titleStyle?: string;
+  desStyle?: string;
+  boxStyle?: string;
 }
 
 export function SectionText({
@@ -21,25 +22,26 @@ export function SectionText({
   btnIcon,
   btnColor,
   btnUrl,
-  descStyle,
+  desStyle,
+  boxStyle,
   titleStyle,
 }: SectionTextProps) {
-  const textVariants = {
-    full: '',
-    md: 'w-1/4',
-    sm: 'w-1/3',
-  };
-
   return (
-    <div className="flex flex-col gap-y-7 text-base">
-      <div className={`${textVariants[titleStyle]} flex flex-col gap-y-4`}>
-        <h1 className="text-xl font-semibold">{title ? title : 'Lorem ipsum dolor'}</h1>
-        <p className={`${textVariants[descStyle]}`}>
+    <div className={`${boxStyle} flex flex-col gap-y-7 font-medium`}>
+      <div className={`flex flex-col gap-y-4`}>
+        {/* Title */}
+        <h1 className={titleStyle}>{title ? title : 'Lorem ipsum dolor'}</h1>
+
+        {/* Description */}
+        <p className={desStyle}>
           {description ? description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
         </p>
       </div>
 
-      <Button type={btnType} title={btnTitle} color={btnColor} icon={btnIcon} url={btnUrl} />
+      {/* Button */}
+      <div className="flex">
+        <Button type={btnType} title={btnTitle} color={btnColor} icon={btnIcon} url={btnUrl} />
+      </div>
     </div>
   );
 }

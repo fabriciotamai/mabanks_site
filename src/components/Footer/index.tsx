@@ -4,7 +4,7 @@ import iconDownloadGoogle from '/assets/images/download-on-google.png';
 import iconDownloadApple from '/assets/icons/download-on-apple.svg';
 
 // Images
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 
 // Components
 import { AppDownload } from '../AppDownload';
@@ -19,7 +19,7 @@ export function Footer() {
           </a>
 
           <div className="address mt-10">
-            <h2 className="mb-1 font-semibold text-white">WebBase</h2>
+            <h2 className="mb-1 font-semibold text-white">B Bank</h2>
             <p>Av. Orozimbo Maia, 1619, Cambuí, Campinas - SP</p>
             <p className="mb-4 mt-4">CEP: 13.024-035</p>
             <h2>Central de Atendimento:</h2>
@@ -101,7 +101,7 @@ export function Footer() {
       {/* ----------- Copyright & Terms -----------*/}
       <div className="footer-bottom mt-6 flex flex-col flex-wrap justify-between border-t-[0.1rem] md:flex-row md:items-center lg:flex-nowrap">
         <div className="flex flex-col gap-5 py-5 md:flex-row">
-          <h1 className="text-sm md:hidden">Siga WebBase</h1>
+          <h1 className="text-sm md:hidden">Siga B Bank</h1>
           <div className="social-icons flex gap-5">
             <a href="#" className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white">
               <Facebook />
@@ -139,7 +139,7 @@ export function Footer() {
         </div>
 
         <p className="copyright mt-4 text-sm md:mt-0 lg:text-sm">
-          Copyright © 2023, WebBase. Todos os direitos reservados.
+          Copyright © 2023, B Bank. Todos os direitos reservados.
         </p>
       </div>
     </footer>

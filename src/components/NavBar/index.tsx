@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 // Images
-import logo from '../../assets/images/logo.png';
-import logoMobile from '../../assets/images/logo-mobile.png';
+import logo from '../../assets/images/logo.webp';
+import logoMobile from '../../assets/images/logo-mobile.webp';
 
 // Icons
 import { User, MoveRight, Menu } from 'lucide-react';
