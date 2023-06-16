@@ -20,12 +20,12 @@ export function Footer() {
 
           <div className="address mt-10">
             <h2 className="mb-1 font-semibold text-white">B Bank</h2>
-            <p>Av. Orozimbo Maia, 1619, Cambuí, Campinas - SP</p>
-            <p className="mb-4 mt-4">CEP: 13.024-035</p>
+            <p>Av. Orod Maia, 1312, Cambí, Jamaica - JM</p>
+            <p className="mb-4 mt-4">CEP: 11.067-021</p>
             <h2>Central de Atendimento:</h2>
-            <p>0800 818 2807</p>
-            <p>4003-8896</p>
-            <p className="mt-4">faleconosco@t10.com.br</p>
+            <p>0800 851 2001</p>
+            <p>2005-0111</p>
+            <p className="mt-4">bbank@example.com.br</p>
           </div>
         </div>
 
