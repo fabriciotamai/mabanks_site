@@ -33,27 +33,42 @@ export function Footer() {
           <h1 className="mb-4 text-lg font-semibold text-white">Informações</h1>
           <ul className="flex flex-col gap-5">
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Tarifas
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Politica Gerenciamento de Riscos
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Política de Prevenção à lavagem de dinheiro
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Procon
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Código de Defesa do Consumidor
               </a>
             </li>
@@ -64,22 +79,34 @@ export function Footer() {
           <h1 className="mb-4 text-lg font-semibold text-white">Empresa</h1>
           <ul className="flex flex-col gap-5">
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Quem somos
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Contato
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Para sua empresa
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Para você
               </a>
             </li>
@@ -103,16 +130,28 @@ export function Footer() {
         <div className="flex flex-col gap-5 py-5 md:flex-row">
           <h1 className="text-sm md:hidden">Siga B Bank</h1>
           <div className="social-icons flex gap-5">
-            <a href="#" className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white">
+            <a
+              href="#"
+              className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+            >
               <Facebook />
             </a>
-            <a href="#" className="icon-instagram rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white">
+            <a
+              href="#"
+              className="icon-instagram rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+            >
               <Instagram />
             </a>
-            <a href="#" className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white">
+            <a
+              href="#"
+              className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+            >
               <Linkedin />
             </a>
-            <a href="#" className="icon-youtube rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white">
+            <a
+              href="#"
+              className="icon-youtube rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+            >
               <Youtube />
             </a>
           </div>
@@ -121,17 +160,26 @@ export function Footer() {
         <div className="flex flex-row text-sm lg:text-sm">
           <ul className="mb-4 mt-4 flex flex-col gap-3 px-0 sm:pl-0 md:flex-row md:gap-10 md-lg:mb-0 md-lg:mt-0 md-lg:px-10">
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Termos de uso
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Política de privacidade
               </a>
             </li>
             <li>
-              <a href="#" className="transition delay-[10] ease-in-out hover:text-white">
+              <a
+                href="#"
+                className="transition delay-[10] ease-in-out hover:text-white"
+              >
                 Segurança de informação
               </a>
             </li>

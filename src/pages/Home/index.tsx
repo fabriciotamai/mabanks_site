@@ -2,7 +2,9 @@
 import { Footer } from '../../components/Footer';
 import { NavBar } from '../../components/NavBar';
 import { Header } from '../../components/Header';
-import { SectionCard } from '../../components/SectionCard';
+
+// Templates
+import { SectionOne } from '../../template/SectionOne';
 
 export default function Home() {
   return (
@@ -14,12 +16,7 @@ export default function Home() {
         </header>
       </nav>
 
-      <SectionCard
-        title={'Gestão simplificada da folha de pagamentos.'}
-        description={
-          'Apenas no B Bank você economiza tempo com uma gestão automatizada e eficiente da folha de pagamentos.'
-        }
-      />
+      <SectionOne />
       <Footer />
     </>
   );
