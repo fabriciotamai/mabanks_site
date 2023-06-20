@@ -12,6 +12,7 @@ interface SectionTextProps {
   titleStyle?: string;
   desStyle?: string;
   boxStyle?: string;
+  btnStyle?: string;
 }
 
 export function SectionText({
@@ -25,6 +26,7 @@ export function SectionText({
   desStyle,
   boxStyle,
   titleStyle,
+  btnStyle,
 }: SectionTextProps) {
   return (
     <div className={`${boxStyle} flex flex-col gap-y-7 font-medium`}>
@@ -34,13 +36,21 @@ export function SectionText({
 
         {/* Description */}
         <p className={desStyle}>
-          {description ? description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+          {description
+            ? description
+            : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
         </p>
       </div>
 
       {/* Button */}
-      <div className="flex">
-        <Button type={btnType} title={btnTitle} color={btnColor} icon={btnIcon} url={btnUrl} />
+      <div className={`${btnStyle} flex`}>
+        <Button
+          type={btnType}
+          title={btnTitle}
+          color={btnColor}
+          icon={btnIcon}
+          url={btnUrl}
+        />
       </div>
     </div>
   );

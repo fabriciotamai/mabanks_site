@@ -5,6 +5,7 @@ import { Header } from '../../components/Header';
 
 // Templates
 import { SectionOne } from '../../template/SectionOne';
+import { SectionTwo } from '../../template/SectionTwo';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       </nav>
 
       <SectionOne />
+      <SectionTwo />
       <Footer />
     </>
   );

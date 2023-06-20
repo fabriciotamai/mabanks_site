@@ -38,7 +38,7 @@ export function SectionOne() {
   return (
     <div className="mx-auto flex flex-col justify-center gap-14 px-10 py-16 xl:flex-row xl:gap-40">
       {/* ----------- Left Texts -----------*/}
-      <div className="text-base text-neutral-900">
+      <div className="text-base text-neutral-900 xl:w-[18rem] xl:pl-4">
         <h1 className="max-w-sm text-3xl font-semibold">
           Somos parceiros para o seu negócio!
         </h1>
@@ -49,7 +49,7 @@ export function SectionOne() {
 
       <div className="flex flex-col gap-20">
         {/* ----------- Right Card row1 -----------*/}
-        <div className="flex flex-col gap-10 md:flex-row">
+        <div className="flex flex-col flex-wrap gap-10 md:flex-row">
           {sectionRowOneData.map((item: any) => {
             return (
               <div className="card">
