@@ -1,25 +1,30 @@
-// Components
-import { Footer } from '../../components/Footer';
-import { NavBar } from '../../components/NavBar';
-import { Header } from '../../components/Header';
-
 // Templates
+import { NavBar } from '../../template/NavBar';
+import { Header } from '../../template/Header';
+import { Footer } from '../../template/Footer';
 import { SectionOne } from '../../template/SectionOne';
 import { SectionTwo } from '../../template/SectionTwo';
+import { SectionThree } from '../../template/SectionThree';
 
 export default function Home() {
   return (
     <>
-      <nav>
-        <NavBar />
-        <header>
-          <Header />
-        </header>
-      </nav>
+      <header>
+        <nav>
+          <NavBar />
+        </nav>
+        <Header />
+      </header>
 
-      <SectionOne />
-      <SectionTwo />
-      <Footer />
+      <div className="content">
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+      </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

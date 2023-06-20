@@ -8,7 +8,9 @@ import logoMobile from '../../assets/images/logo-mobile.webp';
 import { User, MoveRight, Menu } from 'lucide-react';
 
 // Components
-import { Button } from '../Button';
+import { Button } from '../../components/Button';
+
+// Templates
 import { NavBarMobile } from '../NavBarMobile';
 
 export function NavBar() {
@@ -55,7 +57,7 @@ export function NavBar() {
   return (
     <div
       className={`${
-        scrollInPosition ? 'fixed bg-neutral-900' : 'absolute'
+        scrollInPosition ? 'fixed z-50 bg-neutral-900' : 'absolute'
       } z-10 flex w-full items-center justify-between px-5 py-4 transition duration-100 ease-in-out sm:px-16 xl:px-20`}
     >
       {/* ----------- Menu Mobile -----------*/}
@@ -67,12 +69,19 @@ export function NavBar() {
       </button>
 
       <div className="navbar-mobile xl:hidden">
-        <NavBarMobile show={showMobileMenu} setShowMobileMenu={() => setShowMobileMenu(false)} />
+        <NavBarMobile
+          show={showMobileMenu}
+          setShowMobileMenu={() => setShowMobileMenu(false)}
+        />
       </div>
 
       {/* ----------- Menu Desktop -----------*/}
       <a href="/">
-        {isSmViewPort ? <img src={logoMobile} width={70} height={45} /> : <img src={logo} width={150} height={100} />}
+        {isSmViewPort ? (
+          <img src={logoMobile} width={70} height={45} />
+        ) : (
+          <img src={logo} width={150} height={100} />
+        )}
       </a>
 
       <ul className="hidden gap-7 text-xs text-stone-300 lg:text-sm xl:flex xl:text-base">
@@ -99,7 +108,13 @@ export function NavBar() {
         </li>
 
         <li className="hidden hover:text-white lg:flex">
-          <Button color="desktop" type={true} title="Acessar" icon={<User width={20} height={20} />} url={'#'} />
+          <Button
+            color="desktop"
+            type={true}
+            title="Acessar"
+            icon={<User width={20} height={20} />}
+            url={'#'}
+          />
         </li>
 
         <li className="hover:text-white">

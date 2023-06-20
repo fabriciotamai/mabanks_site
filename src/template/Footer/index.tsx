@@ -7,11 +7,11 @@ import iconDownloadApple from '/assets/icons/download-on-apple.svg';
 import logo from '../../assets/images/logo.webp';
 
 // Components
-import { AppDownload } from '../AppDownload';
+import { AppDownload } from '../../components/AppDownload';
 
 export function Footer() {
   return (
-    <footer className="flex flex-col bg-teal-950 px-10 pt-5 text-base text-stone-300 lg:px-20">
+    <div className="flex flex-col bg-teal-950 px-10 pt-5 text-base text-stone-300 lg:px-20">
       <div className="footer-head flex flex-col justify-between gap-8 lg:flex-row ">
         <div className="infos">
           <a href="/" className="flex justify-center lg:justify-normal">
@@ -190,6 +190,6 @@ export function Footer() {
           Copyright © 2023, B Bank. Todos os direitos reservados.
         </p>
       </div>
-    </footer>
+    </div>
   );
 }

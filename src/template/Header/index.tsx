@@ -2,7 +2,7 @@
 import homeBg from '/assets/videos/home-bg.mp4';
 
 // Components
-import { SectionText } from '../SectionText';
+import { SectionText } from '../../components/SectionText';
 
 // Icons
 import { MoveRight } from 'lucide-react';
@@ -13,7 +13,12 @@ export function Header() {
       <div className="relative h-screen w-full">
         <div className="absolute left-0 top-0 z-[1] h-screen w-full bg-black/40" />
         {/* Video */}
-        <video loop autoPlay muted className="absolute left-0 top-0 h-full w-full object-cover">
+        <video
+          loop
+          autoPlay
+          muted
+          className="absolute left-0 top-0 h-full w-full object-cover"
+        >
           <source src={homeBg} type="video/mp4" />
         </video>
 

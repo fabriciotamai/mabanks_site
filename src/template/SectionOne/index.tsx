@@ -71,7 +71,7 @@ export function SectionOne() {
         <div className="flex flex-col gap-10 md:flex-row">
           {sectionRowTwoData.map((item: any) => {
             return (
-              <div className="card">
+              <div className="car">
                 <SectionCard
                   title={item.title}
                   description={item.description}

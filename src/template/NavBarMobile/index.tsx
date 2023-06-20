@@ -3,7 +3,7 @@ import logoMobile from '../../assets/images/logo-mobile.webp';
 
 // Icons
 import { X } from 'lucide-react';
-import { Button } from '../Button';
+import { Button } from '../../components/Button';
 import iconDownloadApple from '/assets/icons/download-on-apple.svg';
 import iconDownloadGoogle from '/assets/images/download-on-google.png';
 
@@ -13,14 +13,21 @@ interface NavMobileProps {
 }
 
 export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
-  const setShow = show ? 'translate-none ease-in' : 'translate-x-[-100%] ease-out';
+  const setShow = show
+    ? 'translate-none ease-in'
+    : 'translate-x-[-100%] ease-out';
 
   return (
-    <div className={`${setShow} fixed bottom-0 left-0 right-0 top-0 bg-red-400 pt-4 transition`}>
+    <div
+      className={`${setShow} fixed bottom-0 left-0 right-0 top-0 bg-red-400 pt-4 transition`}
+    >
       <div className="mx-auto w-[90%]">
         {/* ----------- Button X mobile -----------*/}
         <div className="nav-head flex items-center justify-between pb-16">
-          <button onClick={() => setShowMobileMenu()} className="rounded p-1 hover:scale-110 hover:bg-white">
+          <button
+            onClick={() => setShowMobileMenu()}
+            className="rounded p-1 hover:scale-110 hover:bg-white"
+          >
             <X color="#171717" className="scale-110" />
           </button>
 
@@ -72,10 +79,18 @@ export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
             <h1>Baixe agora o app!</h1>
             <div className="mt-1 flex flex-row items-center gap-7">
               <a href="http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                <img className="h-auto w-60" alt="Disponível no Google Play" src={iconDownloadGoogle} />
+                <img
+                  className="h-auto w-60"
+                  alt="Disponível no Google Play"
+                  src={iconDownloadGoogle}
+                />
               </a>
               <a href="http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                <img className="h-auto w-56" alt="Disponível na Apple" src={iconDownloadApple} />
+                <img
+                  className="h-auto w-56"
+                  alt="Disponível na Apple"
+                  src={iconDownloadApple}
+                />
               </a>
             </div>
           </div>
