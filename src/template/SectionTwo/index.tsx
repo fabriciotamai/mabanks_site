@@ -29,7 +29,12 @@ export function SectionTwo() {
 
         {/* ----------- Credit card -----------*/}
         <div className="credit-card absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
-          <img src={creditCard} width={280} height={'100%'} />
+          <img
+            src={creditCard}
+            width={280}
+            height={'100%'}
+            data-aos="fade-up"
+          />
         </div>
 
         {/* ----------- Right bg -----------*/}

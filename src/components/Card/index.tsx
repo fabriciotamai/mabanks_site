@@ -88,7 +88,7 @@ export function Card({
         <div className="absolute left-0 top-0 z-[5] h-full w-full bg-black/10" />
 
         {type === 'bgNone' && (
-          <div className="h-full w-80">
+          <div className="h-full w-80 hover:scale-[110%]" data-aos="fade-left">
             <div className={`h-full w-full ${image} bg-cover bg-no-repeat`} />
           </div>
         )}

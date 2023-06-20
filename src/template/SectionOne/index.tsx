@@ -6,12 +6,14 @@ import { SectionCard } from '../../components/SectionCard';
 
 const sectionRowOneData = [
   {
+    id: 1,
     title: 'Gestão simplificada da folha de pagamentos.',
     description:
       'Apenas no B Bank você economiza tempo com uma gestão automatizada e eficiente da folha de pagamentos.',
     icon: <User2 />,
   },
   {
+    id: 2,
     title: 'Assessoria jurídica especializada',
     description:
       'Parceria antes mesmo de fechar negócio. Prestamos auxílio na negociação de dívidas, pois somos parceiros do seu negócio!',
@@ -21,12 +23,14 @@ const sectionRowOneData = [
 
 const sectionRowTwoData = [
   {
+    id: 1,
     title: 'Atendimento humanizado',
     description:
       'Não perca tempo falando com máquinas se elas não puderem ajudar. Aqui sempre terá alguém a sua disposição via abertura de ticket ou telefone.',
     icon: <Heart />,
   },
   {
+    id: 2,
     title: 'Estrutura de e-commerce gratuita',
     description:
       'O sistema B Bank de e-commerce conta com integração com a sua conta e é o único completamente gratuito do mercado!',
@@ -52,7 +56,7 @@ export function SectionOne() {
         <div className="flex flex-col flex-wrap gap-10 md:flex-row">
           {sectionRowOneData.map((item: any) => {
             return (
-              <div className="card">
+              <div className="card" key={item.id}>
                 <SectionCard
                   title={item.title}
                   description={item.description}
@@ -71,7 +75,7 @@ export function SectionOne() {
         <div className="flex flex-col gap-10 md:flex-row">
           {sectionRowTwoData.map((item: any) => {
             return (
-              <div className="car">
+              <div className="car" key={item.id}>
                 <SectionCard
                   title={item.title}
                   description={item.description}

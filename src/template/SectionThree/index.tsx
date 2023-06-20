@@ -11,7 +11,10 @@ export function SectionThree() {
   return (
     <>
       {/* ----------- Texts -----------*/}
-      <div className="mb-20 mt-20 flex flex-col flex-wrap px-10 text-center text-base text-neutral-900 lg:w-[45%] lg:items-start lg:justify-start lg:pl-10 lg:pr-0 lg:text-start xl:pl-[18%]">
+      <div
+        data-aos="fade-right"
+        className="mb-20 mt-20 flex flex-col flex-wrap px-10 text-center text-base text-neutral-900 lg:w-[45%] lg:items-start lg:justify-start lg:pl-10 lg:pr-0 lg:text-start xl:pl-[18%]"
+      >
         <h1 className="mb-6 text-3xl">
           Você ganha tempo <b>e a gente cuida do resto.</b>
         </h1>
@@ -100,7 +103,6 @@ export function SectionThree() {
 
               <div className="card-small grid">
                 <Card
-                  type="bgNone"
                   btnType={true}
                   btnTitle="Saiba mais"
                   btnColor="desktop"
@@ -111,7 +113,8 @@ export function SectionThree() {
                   btnUrl="#"
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
-                  mainContainerStyle="!bg-[#1e1e1e]"
+                  mainContainerStyle="!bg-red-400"
+                  btnContainerStyle="hidden"
                   image="bg-[url('/assets/images/card-image.png')]"
                 />
               </div>
