@@ -2,7 +2,7 @@
 import { Button } from '../Button';
 
 interface CardProps {
-  type?: 'noImage' | 'bgImage';
+  type?: 'bgNone' | 'bgImage';
   title: string;
   description: string;
   mainContainerStyle?: string;
@@ -41,12 +41,12 @@ export function Card({
   image,
 }: CardProps) {
   const cardVariants = {
-    noImage: '',
-    bgImage: `bg-[url("${mainContainerImage}")] bg-cover bg-center bg-no-repeat`,
+    bgNone: '',
+    bgImage: `${mainContainerImage} bg-cover bg-center bg-no-repeat`,
   };
 
-  const validType = type ?? 'noImage';
-  const selectVariant = cardVariants[validType] || cardVariants['noImage'];
+  const validType = type ?? 'bgNone';
+  const selectVariant = cardVariants[validType] || cardVariants['bgNone'];
 
   return (
     <div
@@ -87,11 +87,9 @@ export function Card({
       <div className="absolute bottom-0 left-0 right-0 top-0 flex h-full w-full items-end justify-end overflow-hidden">
         <div className="absolute left-0 top-0 z-[5] h-full w-full bg-black/10" />
 
-        {type === 'noImage' && (
+        {type === 'bgNone' && (
           <div className="h-full w-80">
-            <div
-              className={`h-full w-full bg-[url('${image}')] bg-cover bg-no-repeat`}
-            />
+            <div className={`h-full w-full ${image} bg-cover bg-no-repeat`} />
           </div>
         )}
       </div>

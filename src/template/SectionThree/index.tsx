@@ -26,7 +26,7 @@ export function SectionThree() {
           <div className="cards grid grid-cols-1 lg:grid-cols-2">
             <div className="card-large">
               <Card
-                type="noImage"
+                type="bgNone"
                 btnType={true}
                 btnTitle="Saiba mais"
                 btnColor="desktop"
@@ -38,13 +38,13 @@ export function SectionThree() {
                 titleStyle="w-[50%] !hidden"
                 descStyle="w-[70%]"
                 mainContainerStyle="!bg-[#1e1e1e]"
-                image="/assets/images/card-image.png"
+                image="bg-[url('/assets/images/card-image.png')]"
               />
             </div>
 
             <div className="card-small grid">
               <Card
-                type="noImage"
+                type="bgNone"
                 btnType={true}
                 btnTitle="Saiba mais"
                 btnColor="desktop"
@@ -56,7 +56,7 @@ export function SectionThree() {
                 descStyle="w-[70%]"
                 logoStyle="!hidden"
                 mainContainerStyle="!bg-[#1e1e1e]"
-                image="/assets/images/card-image.png"
+                image="bg-[url('/assets/images/card-image.png')]"
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ export function SectionThree() {
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
                   mainContainerStyle="!bg-[#1e1e1e]"
-                  mainContainerImage="/assets/images/card-image-old.png"
+                  mainContainerImage="bg-[url('/assets/images/card-image-old.png')]"
                 />
               </div>
 
@@ -95,13 +95,12 @@ export function SectionThree() {
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
                   mainContainerStyle="!bg-teal-950"
-                  image="/assets/images/card-image.png"
                 />
               </div>
 
               <div className="card-small grid">
                 <Card
-                  type="noImage"
+                  type="bgNone"
                   btnType={true}
                   btnTitle="Saiba mais"
                   btnColor="desktop"
@@ -113,7 +112,7 @@ export function SectionThree() {
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
                   mainContainerStyle="!bg-[#1e1e1e]"
-                  image="/assets/images/card-image.png"
+                  image="bg-[url('/assets/images/card-image.png')]"
                 />
               </div>
             </div>
