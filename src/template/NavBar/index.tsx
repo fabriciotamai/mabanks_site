@@ -113,7 +113,7 @@ export function NavBar() {
             type={true}
             title="Acessar"
             icon={<User width={20} height={20} />}
-            url={'#'}
+            url="/login"
           />
         </li>
 
