@@ -6,7 +6,7 @@ import { SectionOne } from '../../template/SectionOne';
 import { SectionTwo } from '../../template/SectionTwo';
 import { SectionThree } from '../../template/SectionThree';
 
-export default function Home() {
+export function Home() {
   return (
     <>
       <header>
