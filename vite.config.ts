@@ -9,4 +9,9 @@ dotenv.config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      external: ['react', 'react-dom', 'react-router', 'react-router-dom'],
+    },
+  },
 });
