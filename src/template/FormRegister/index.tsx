@@ -17,7 +17,7 @@ export function FormRegister() {
       <div className="flex flex-col">
         <form>
           {/* Input Nome & sobrenome */}
-          <div className="email mb-5 flex flex-row justify-between">
+          <div className="email mb-5 flex flex-col justify-between xl:flex-row">
             {/* Input Nome */}
             <div className="name flex flex-col">
               <label
@@ -30,7 +30,7 @@ export function FormRegister() {
             </div>
 
             {/* Input sobrenome */}
-            <div className="name flex flex-col">
+            <div className="name mt-5 flex flex-col xl:mt-0">
               <label
                 htmlFor="sobrenome"
                 className="text-base text-neutral-950 after:text-red-400 after:content-['*']"
