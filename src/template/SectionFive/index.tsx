@@ -42,7 +42,7 @@ const benefitsData = [
 
 export function SectionFive() {
   return (
-    <div className="mx-auto mt-20 flex max-w-[84%] flex-col text-neutral-950 xl:max-w-[64%]">
+    <div className="mx-auto mt-20 flex max-w-[84%] flex-col overflow-x-hidden text-neutral-950 xl:max-w-[64%]">
       {/* ----------- Header Texts -----------*/}
       <div className="flex flex-col items-center gap-8 xl:flex-row xl:justify-between xl:gap-40">
         <h1 className="text-center text-3xl font-semibold lg:text-start xl:w-1/3">

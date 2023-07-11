@@ -199,7 +199,7 @@ export function SectionSix() {
       id="planos"
       className={`${
         company ? 'bg-stone-500' : 'bg-red-400'
-      } mt-20 flex flex-col items-center gap-5 pb-20 pt-24`}
+      } mt-20 flex flex-col items-center gap-5 overflow-x-hidden pb-20 pt-24`}
     >
       {/* ----------- Title -----------*/}
       <h1 className="w-[95%] text-center text-xl text-white sm:text-3xl xl:w-1/2">
