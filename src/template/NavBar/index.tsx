@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+
+// Context
+import { useMyContext } from '../../context/Context';
 
 // Images
-import logo from '../../assets/images/logo.webp';
-import logoMobile from '../../assets/images/logo-mobile.webp';
+import logo from '../../assets/icons/logo.svg';
+import logoMobile from '../../assets/icons/logo-mobile.svg';
 
 // Icons
 import { User, MoveRight, Menu } from 'lucide-react';
@@ -17,6 +21,18 @@ export function NavBar() {
   const [isSmViewPort, setSmViewPort] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrollInPosition, setScrollInPosition] = useState(false);
+  const { handleSetCompany } = useMyContext();
+
+  // Scroll to plans on click
+  useEffect(() => {
+    const idToPlans = 'planos';
+    const sectionPlan = document.getElementById(idToPlans);
+    const hash = window.location.hash;
+
+    if (sectionPlan && hash) {
+      sectionPlan.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   // Change the logo based on the window size (mobile).
   useEffect(() => {
@@ -58,7 +74,7 @@ export function NavBar() {
     <div
       className={`${
         scrollInPosition ? 'fixed z-50 bg-neutral-900' : 'absolute'
-      } z-10 flex w-full items-center justify-between px-5 py-4 transition duration-100 ease-in-out sm:px-16 xl:px-20`}
+      } z-10 flex w-full items-center justify-between px-5 py-2 transition duration-100 ease-in-out sm:px-16 xl:px-20`}
     >
       {/* ----------- Menu Mobile -----------*/}
       <button
@@ -78,33 +94,33 @@ export function NavBar() {
       {/* ----------- Menu Desktop -----------*/}
       <a href="/">
         {isSmViewPort ? (
-          <img src={logoMobile} width={70} height={45} />
+          <img src={logoMobile} width={55} height={45} />
         ) : (
-          <img src={logo} width={150} height={100} />
+          <img src={logo} width={180} height={'auto'} />
         )}
       </a>
 
       <ul className="hidden gap-7 text-xs text-stone-300 lg:text-sm xl:flex xl:text-base">
         <li className="delay-5 transition ease-in hover:text-white">
-          <a href="#">Para sua empresa</a>
+          <a href="/#planos" onClick={() => handleSetCompany(true)}>
+            Para sua empresa
+          </a>
         </li>
 
         <li className="delay-5 transition ease-in hover:text-white">
-          <a href="#">Para você</a>
+          <a href="/#planos" onClick={() => handleSetCompany(false)}>
+            Para você
+          </a>
         </li>
 
         <li className="delay-5 transition ease-in hover:text-white">
-          <a href="#">Contato</a>
-        </li>
-
-        <li className="delay-5 transition ease-in hover:text-white">
-          <a href="#">Blog</a>
+          <a href="/contato">Contato</a>
         </li>
       </ul>
 
       <ul className="flex items-center gap-7 text-white">
         <li className="delay-5 hidden text-stone-300 transition ease-in hover:text-white lg:flex">
-          <a href="#">Quem somos</a>
+          <a href="/quem-somos">Quem somos</a>
         </li>
 
         <li className="hidden hover:text-white lg:flex">
@@ -123,7 +139,12 @@ export function NavBar() {
             title={isSmViewPort ? 'Abrir conta' : 'Quero abrir minha conta'}
             icon={<MoveRight width={20} height={20} />}
             color="desktop"
-            url={'#'}
+            url="/register"
+            btnStyle={
+              scrollInPosition
+                ? 'bg-white text-neutral-950 hover:bg-neutral-500 hover:text-white'
+                : 'bg-neutral-950 hover:bg-white hover:text-neutral-950 border-2'
+            }
           />
         </li>
       </ul>

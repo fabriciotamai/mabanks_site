@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // Components
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
@@ -38,24 +40,40 @@ export function FormLogin() {
               type="password"
               placeholder="Digite sua senha"
             />
+            {/* Change password button */}
+            <div className="mt-3 flex text-sm">
+              <Link
+                to="#"
+                className="w-1/11 flex border-b-2
+          border-neutral-950 text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
+              >
+                Esqueceu sua senha?
+              </Link>
+            </div>
           </div>
         </form>
       </div>
 
       {/* ----------- Form Button -----------*/}
       <div className="button mt-10">
-        <Button type={false} title="Entrar" color="desktop" url="#" />
+        <Button
+          type={false}
+          title="Entrar"
+          color="desktop"
+          url="#"
+          btnStyle="bg-neutral-950 text-white hover:bg-neutral-950/50 hover:bg-neutral-800"
+        />
       </div>
 
-      {/* ----------- Change password button -----------*/}
+      {/* ----------- Register button -----------*/}
       <div className="flex justify-center">
-        <a
-          href="#"
+        <Link
+          to="/register"
           className="w-1/11 mt-6 flex justify-center border-b-2
           border-red-400 text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
         >
-          Esqueceu sua senha?
-        </a>
+          Não tem uma conta? Cadastrar
+        </Link>
       </div>
     </div>
   );

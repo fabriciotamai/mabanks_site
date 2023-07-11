@@ -1,5 +1,5 @@
 // Images
-import logoMobile from '../../assets/images/logo-mobile.webp';
+import logoMobile from '../../assets/icons/logo-mobile.svg';
 
 // Icons
 import { X } from 'lucide-react';
@@ -32,10 +32,16 @@ export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
           </button>
 
           <a href="/">
-            <img src={logoMobile} width={70} height={45} />
+            <img src={logoMobile} width={65} height={45} />
           </a>
 
-          <Button type={false} title="Abrir conta" color="mobile" url="#" />
+          <Button
+            type={false}
+            title="Acessar"
+            color="mobile"
+            url="/login"
+            btnStyle="hover:text-neutral-950"
+          />
         </div>
 
         {/* ----------- NavItems mobile -----------*/}
@@ -55,20 +61,20 @@ export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
               </li>
 
               <li>
-                <a href="#" className="py-2 hover:text-white">
+                <a href="/contato" className="py-2 hover:text-white">
                   Contato
                 </a>
               </li>
 
               <li>
-                <a href="#" className="py-2 hover:text-white">
-                  Blog
+                <a href="/quem-somos" className="py-2 hover:text-white">
+                  Quem somos
                 </a>
               </li>
 
               <li className="border-y-[0.1rem] border-neutral-900 py-5">
-                <a href="#" className="py-5 hover:text-white">
-                  Tenha seu próprio banco digital
+                <a href="/register" className="py-5 hover:text-white">
+                  Ainda não tem uma conta? Cadastrar
                 </a>
               </li>
             </ul>

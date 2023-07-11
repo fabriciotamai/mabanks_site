@@ -11,7 +11,7 @@ export function Login() {
     <div className="content h-[100vh]">
       <div className="grid h-full grid-cols-1 md:grid-cols-2">
         {/* ----------- Section Image & button back -----------*/}
-        <div className="relative grid grid-cols-1 bg-[url('/assets/images/login-bg.png')] bg-cover bg-no-repeat">
+        <div className="relative grid grid-cols-1 bg-[url('/assets/images/login-bg.jpeg')] bg-cover bg-no-repeat">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-black/60" />
 
           <Link
@@ -34,7 +34,7 @@ export function Login() {
           <div className="flex w-full max-w-md flex-col px-2 sm:max-w-lg">
             <h1 className="mb-12 text-center font-Syne text-xl font-bold text-neutral-950">
               <b className="mr-1 border-b-2 border-r-2 border-red-400 pr-1">
-                B BANK
+                MA BANKS
               </b>
               Internet Banking
             </h1>

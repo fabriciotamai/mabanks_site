@@ -9,7 +9,7 @@ const sectionRowOneData = [
     id: 1,
     title: 'Gestão simplificada da folha de pagamentos.',
     description:
-      'Apenas no B Bank você economiza tempo com uma gestão automatizada e eficiente da folha de pagamentos.',
+      'Apenas no Ma Banks você economiza tempo com uma gestão automatizada e eficiente da folha de pagamentos.',
     icon: <User2 />,
   },
   {
@@ -33,7 +33,7 @@ const sectionRowTwoData = [
     id: 2,
     title: 'Estrutura de e-commerce gratuita',
     description:
-      'O sistema B Bank de e-commerce conta com integração com a sua conta e é o único completamente gratuito do mercado!',
+      'O sistema Ma Banks de e-commerce conta com integração com a sua conta e é o único completamente gratuito do mercado!',
     icon: <Store />,
   },
 ];
@@ -64,7 +64,7 @@ export function SectionOne() {
                   descStyle="text-zinc-500"
                   textContainerStyle="lg:w-96"
                   icon={item.icon}
-                  bgIconStyle="text-red-500"
+                  bgIconStyle="text-neutral-950"
                 />
               </div>
             );
@@ -83,7 +83,7 @@ export function SectionOne() {
                   descStyle="text-zinc-500"
                   textContainerStyle="lg:w-96"
                   icon={item.icon}
-                  bgIconStyle="text-red-500"
+                  bgIconStyle="text-neutral-950"
                 />
               </div>
             );

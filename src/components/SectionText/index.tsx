@@ -1,7 +1,7 @@
 // Components
 import { Button } from '../Button';
 
-interface SectionTextProps {
+export interface SectionTextProps {
   title: string;
   description: string;
   btnType: boolean;
@@ -12,6 +12,7 @@ interface SectionTextProps {
   titleStyle?: string;
   desStyle?: string;
   boxStyle?: string;
+  btnContainerStyle?: string;
   btnStyle?: string;
 }
 
@@ -27,6 +28,7 @@ export function SectionText({
   boxStyle,
   titleStyle,
   btnStyle,
+  btnContainerStyle,
 }: SectionTextProps) {
   return (
     <div className={`${boxStyle} flex flex-col gap-y-7 font-medium`}>
@@ -43,13 +45,14 @@ export function SectionText({
       </div>
 
       {/* Button */}
-      <div className={`${btnStyle} flex`}>
+      <div className={`${btnContainerStyle} flex`}>
         <Button
           type={btnType}
           title={btnTitle}
           color={btnColor}
           icon={btnIcon}
           url={btnUrl}
+          btnStyle={btnStyle}
         />
       </div>
     </div>

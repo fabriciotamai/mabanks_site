@@ -19,7 +19,8 @@ export function SectionThree() {
           Você ganha tempo <b>e a gente cuida do resto.</b>
         </h1>
         <p className="lg:w-[70%]">
-          Vantagens que o B Bank oferece para você fazer o seu negócio crescer.
+          Vantagens que o Ma Banks oferece para você fazer o seu negócio
+          crescer.
         </p>
       </div>
 
@@ -36,12 +37,12 @@ export function SectionThree() {
                 logo={cardLogo}
                 btnIcon={<MoveRight />}
                 title="Receba pagamentos com agilidade."
-                description="Aproveite todas as vantagens do B Bank com o Titan, o nosso plano completo."
+                description="Aproveite todas as vantagens do Ma Banks com o Titan, o nosso plano completo."
                 btnUrl="#"
                 titleStyle="w-[50%] !hidden"
                 descStyle="w-[70%]"
                 mainContainerStyle="!bg-[#1e1e1e]"
-                image="bg-[url('/assets/images/card-image.png')]"
+                image="bg-[url('/assets/images/card-image.jpeg')]"
               />
             </div>
 
@@ -59,7 +60,7 @@ export function SectionThree() {
                 descStyle="w-[70%]"
                 logoStyle="!hidden"
                 mainContainerStyle="!bg-[#1e1e1e]"
-                image="bg-[url('/assets/images/card-image.png')]"
+                image="bg-[url('/assets/images/card-image.jpeg')]"
               />
             </div>
           </div>
@@ -81,7 +82,7 @@ export function SectionThree() {
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
                   mainContainerStyle="!bg-[#1e1e1e]"
-                  mainContainerImage="bg-[url('/assets/images/card-image-old.png')]"
+                  mainContainerImage="bg-[url('/assets/images/card-image-old.jpeg')]"
                 />
               </div>
 
@@ -92,7 +93,7 @@ export function SectionThree() {
                   btnColor="desktop"
                   btnIcon={<MoveRight />}
                   title="Receba pagamentos com agilidade."
-                  description="Aproveite todas as vantagens do B Bank com o Titan, o nosso plano completo."
+                  description="Aproveite todas as vantagens do Ma Banks com o Titan, o nosso plano completo."
                   btnUrl="#"
                   logoStyle="hidden"
                   titleStyle="xl:w-[80%]"
@@ -108,7 +109,7 @@ export function SectionThree() {
                   btnColor="desktop"
                   logo={cardLogo}
                   btnIcon={<MoveRight />}
-                  title="Economize tempo com o B Bank 10."
+                  title="Economize tempo com o Ma Banks."
                   description="Diga adeus às filas de pedágio e estacionamentos."
                   btnUrl="#"
                   titleStyle="xl:w-[80%]"

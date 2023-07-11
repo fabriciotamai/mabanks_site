@@ -1,31 +1,36 @@
+// Context
+import { useMyContext } from '../../context/Context';
+
 // Icons
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import iconDownloadGoogle from '/assets/images/download-on-google.png';
 import iconDownloadApple from '/assets/icons/download-on-apple.svg';
 
 // Images
-import logo from '../../assets/images/logo.webp';
+import logo from '../../assets/icons/logo.svg';
 
 // Components
 import { AppDownload } from '../../components/AppDownload';
 
 export function Footer() {
+  const { handleSetCompany } = useMyContext();
+
   return (
     <div className="flex flex-col bg-teal-950 px-10 pt-5 text-base text-stone-300 lg:px-20">
       <div className="footer-head flex flex-col justify-between gap-8 lg:flex-row ">
         <div className="infos">
           <a href="/" className="flex justify-center lg:justify-normal">
-            <img src={logo} width={150} height={40} />
+            <img src={logo} width={200} height={40} />
           </a>
 
           <div className="address mt-10">
-            <h2 className="mb-1 font-semibold text-white">B Bank</h2>
+            <h2 className="mb-1 font-semibold text-white">Ma Banks</h2>
             <p>Av. Orod Maia, 1312, Cambí, Jamaica - JM</p>
             <p className="mb-4 mt-4">CEP: 11.067-021</p>
             <h2>Central de Atendimento:</h2>
             <p>0800 851 2001</p>
             <p>2005-0111</p>
-            <p className="mt-4">bbank@example.com.br</p>
+            <p className="mt-4">contato@mabanks.com.br</p>
           </div>
         </div>
 
@@ -34,7 +39,7 @@ export function Footer() {
           <ul className="flex flex-col gap-5">
             <li>
               <a
-                href="#"
+                href="/#planos"
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Tarifas
@@ -80,7 +85,7 @@ export function Footer() {
           <ul className="flex flex-col gap-5">
             <li>
               <a
-                href="#"
+                href="/quem-somos"
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Quem somos
@@ -88,7 +93,7 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/contato"
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Contato
@@ -96,7 +101,8 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/#planos"
+                onClick={() => handleSetCompany(true)}
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Para sua empresa
@@ -104,7 +110,8 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/#planos"
+                onClick={() => handleSetCompany(false)}
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Para você
@@ -128,7 +135,7 @@ export function Footer() {
       {/* ----------- Copyright & Terms -----------*/}
       <div className="footer-bottom mt-6 flex flex-col flex-wrap justify-between border-t-[0.1rem] md:flex-row md:items-center lg:flex-nowrap">
         <div className="flex flex-col gap-5 py-5 md:flex-row">
-          <h1 className="text-sm md:hidden">Siga B Bank</h1>
+          <h1 className="text-sm md:hidden">Siga Ma Banks</h1>
           <div className="social-icons flex gap-5">
             <a
               href="#"
@@ -169,7 +176,7 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/politica-de-privacidade"
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Política de privacidade
@@ -177,7 +184,7 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/politica-de-seguranca"
                 className="transition delay-[10] ease-in-out hover:text-white"
               >
                 Segurança de informação
@@ -187,7 +194,7 @@ export function Footer() {
         </div>
 
         <p className="copyright mt-4 text-sm md:mt-0 lg:text-sm">
-          Copyright © 2023, B Bank. Todos os direitos reservados.
+          Copyright © 2023, Ma Banks. Todos os direitos reservados.
         </p>
       </div>
     </div>

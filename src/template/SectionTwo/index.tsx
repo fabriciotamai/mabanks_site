@@ -15,15 +15,16 @@ export function SectionTwo() {
         <div className="z-[1] mt-10 flex w-[80%] text-center sm:w-[50%] lg:mt-0 lg:w-1/4 lg:text-left xl:w-1/4">
           <SectionText
             title="Estamos do seu lado para superar ainda mais desafios!"
-            description="Escolha ser B Bank, Cronos ou Titan. Sem surpresas ou taxas escondidas."
+            description="Escolha ser Ma Banks, Cronos ou Titan. Sem surpresas ou taxas escondidas."
             btnType={false}
-            btnTitle="Conheça os planos B Bank"
+            btnTitle="Conheça os planos Ma Banks"
             btnColor="desktop"
             btnUrl="#"
             btnIcon={<MoveRight />}
             titleStyle="text-2xl font-semibold"
             desStyle="text-base"
-            btnStyle="justify-center mb-36 lg:mb-0 lg:justify-start"
+            btnContainerStyle="justify-center mb-36 lg:mb-0 lg:justify-start"
+            btnStyle="bg-white hover:text-white hover:bg-neutral-950 text-neutral-950"
           />
         </div>
 
@@ -40,7 +41,7 @@ export function SectionTwo() {
         {/* ----------- Right bg -----------*/}
         <div className="flex w-full lg:w-[40rem]">
           <div
-            className={`h-[500px] w-full bg-[url('/assets/images/dog.png')] bg-cover bg-no-repeat`}
+            className={`h-[500px] w-full bg-[url('/assets/images/dog.jpeg')] bg-cover bg-no-repeat`}
           />
         </div>
       </div>
