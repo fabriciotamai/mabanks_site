@@ -8,6 +8,7 @@ import { Contact } from '../pages/Contact';
 import { About } from '../pages/About';
 import { PrivacyPolicy } from '../pages/PrivacyPolicy';
 import { SecurityPolicy } from '../pages/SecurityPolicy';
+import { PageNotFound } from '../pages/PageNotFound';
 
 export default function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ export default function AppRoutes() {
         <Route path="/quem-somos" element={<About />} />
         <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
         <Route path="/politica-de-seguranca" element={<SecurityPolicy />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

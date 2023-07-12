@@ -20,6 +20,7 @@ export function Home() {
         <nav>
           <NavBar />
         </nav>
+
         <Header />
       </header>
 

@@ -27,7 +27,7 @@ export function Button({
   return type ? (
     <a
       href={url}
-      className={`${colorVariants[color]}  flex items-center justify-center gap-2 rounded border-2  px-4 py-2`}
+      className={`${colorVariants[color]} ${btnStyle} flex items-center justify-center gap-2 rounded border-2  px-4 py-2`}
     >
       <p className="text-sm">{title}</p>
       {icon}
