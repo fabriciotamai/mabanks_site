@@ -32,7 +32,12 @@ export function NavBarMobile({ show, setShowMobileMenu }: NavMobileProps) {
           </button>
 
           <a href="/">
-            <img src={logoMobile} width={65} height={45} />
+            <img
+              src={logoMobile}
+              width={65}
+              height={45}
+              alt="Logo da Ma Banks - Serviços financeiros modernos"
+            />
           </a>
 
           <Button

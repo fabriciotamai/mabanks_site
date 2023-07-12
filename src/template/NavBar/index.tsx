@@ -94,9 +94,19 @@ export function NavBar() {
       {/* ----------- Menu Desktop -----------*/}
       <a href="/">
         {isSmViewPort ? (
-          <img src={logoMobile} width={55} height={45} />
+          <img
+            src={logoMobile}
+            width={55}
+            height={45}
+            alt="Logo da Ma Banks - Serviços financeiros modernos"
+          />
         ) : (
-          <img src={logo} width={180} height={'auto'} />
+          <img
+            src={logo}
+            width={180}
+            height={'auto'}
+            alt="Logo da Ma Banks - Serviços financeiros modernos"
+          />
         )}
       </a>
 

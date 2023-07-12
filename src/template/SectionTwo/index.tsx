@@ -35,6 +35,7 @@ export function SectionTwo() {
             width={280}
             height={'100%'}
             data-aos="fade-up"
+            alt="Cartão de crédito - Liberte-se das limitações financeiras e desfrute da liberdade de compra"
           />
         </div>
 

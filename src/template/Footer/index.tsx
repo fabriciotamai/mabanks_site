@@ -20,7 +20,12 @@ export function Footer() {
       <div className="footer-head flex flex-col justify-between gap-8 lg:flex-row ">
         <div className="infos">
           <a href="/" className="flex justify-center lg:justify-normal">
-            <img src={logo} width={200} height={40} />
+            <img
+              src={logo}
+              width={200}
+              height={40}
+              alt="Logo da Ma Banks - Serviços financeiros modernos"
+            />
           </a>
 
           <div className="address mt-10">
