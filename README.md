@@ -6,10 +6,13 @@ Website da Ma Banks
 
 ## Começando
 
-### Dependências
+### Dependências projeto
 
 * [pnpm](https://pnpm.io/pt/)
 * [Vite & React](https://vitejs.dev/)
+### Outras dependências
+* [SENDGRID](https://sendgrid.com/) (Para API Key formulário de e-mail)
+
 
 ### Instalação
 
