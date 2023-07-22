@@ -1,7 +1,5 @@
 # Ma Banks
 
-## Descrição
-
 Website da Ma Banks
 
 ## Começando
