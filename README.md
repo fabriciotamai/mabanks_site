@@ -20,7 +20,13 @@ pnpm install
 
 ### Executando
 
-* Digite o comando abaixo
-```
-pnpm dev
-```
+* Crie um arquivo ```.env``` com os dados abaixo na pasta raiz para funcionamento do formulário de contato.
+  
+  ```
+  VITE_SENDGRID_API_KEY=YOURKEY
+  VITE_SENDER_EMAIL=EMAIL
+  ```
+* Digite o comando abaixo para executar o projeto.
+  ```
+  pnpm dev
+  ```
