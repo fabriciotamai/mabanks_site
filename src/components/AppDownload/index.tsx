@@ -19,7 +19,7 @@ export function AppDownload({
 }: AppDownloadProps) {
   return (
     <div className="mt-20">
-      <h1 className="text-lg font-semibold text-red-400">{title}</h1>
+      <h1 className="text-lg font-semibold text-[#828282]">{title}</h1>
       <div className="mt-1 flex flex-row items-center gap-7">
         <a href={urlGoogle}>
           <img className="h-auto w-52" alt={altGoogle} src={iconGoogle} />

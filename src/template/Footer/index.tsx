@@ -16,7 +16,7 @@ export function Footer() {
   const { handleSetCompany } = useMyContext();
 
   return (
-    <div className="flex flex-col bg-teal-950 px-10 pt-5 text-base text-stone-300 lg:px-20">
+    <div className="flex flex-col bg-black px-10 pt-5 text-base text-stone-300 lg:px-20">
       <div className="footer-head flex flex-col justify-between gap-8 lg:flex-row ">
         <div className="infos">
           <a href="/" className="flex justify-center lg:justify-normal">
@@ -144,25 +144,25 @@ export function Footer() {
           <div className="social-icons flex gap-5">
             <a
               href="#"
-              className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+              className="icon-facebook rounded bg-[#828282] p-2 text-white hover:bg-red-500 hover:text-white"
             >
               <Facebook />
             </a>
             <a
               href="#"
-              className="icon-instagram rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+              className="icon-instagram rounded bg-[#828282] p-2 text-white hover:bg-red-500 hover:text-white"
             >
               <Instagram />
             </a>
             <a
               href="#"
-              className="icon-facebook rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+              className="icon-facebook rounded bg-[#828282] p-2 text-white hover:bg-red-500 hover:text-white"
             >
               <Linkedin />
             </a>
             <a
               href="#"
-              className="icon-youtube rounded bg-red-400 p-2 text-white hover:bg-red-500 hover:text-white"
+              className="icon-youtube rounded bg-[#828282] p-2 text-white hover:bg-red-500 hover:text-white"
             >
               <Youtube />
             </a>

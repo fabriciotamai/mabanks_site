@@ -59,7 +59,7 @@ export function SectionThree() {
                 titleStyle="w-[50%]"
                 descStyle="w-[70%]"
                 logoStyle="!hidden"
-                mainContainerStyle="!bg-[#1e1e1e]"
+                mainContainerStyle="!bg-[#171717]"
                 image="bg-[url('/assets/images/card-image.jpeg')]"
               />
             </div>
@@ -98,7 +98,7 @@ export function SectionThree() {
                   logoStyle="hidden"
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
-                  mainContainerStyle="!bg-teal-950"
+                  mainContainerStyle="bg-[#828282]"
                 />
               </div>
 
@@ -114,7 +114,7 @@ export function SectionThree() {
                   btnUrl="#"
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
-                  mainContainerStyle="!bg-red-400"
+                  mainContainerStyle="bg-[BABABA]"
                   btnContainerStyle="hidden"
                   image="bg-[url('/assets/images/card-image.png')]"
                 />
