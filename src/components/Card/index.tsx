@@ -59,7 +59,7 @@ export function Card({
       <div className="z-10 flex flex-col flex-wrap">
         <img
           src={logo}
-          width={150}
+          width={170}
           height={'auto'}
           className={`${logoStyle} mb-10`}
         />
@@ -89,6 +89,7 @@ export function Card({
 
         {type === 'bgNone' && (
           <div className="h-full w-80 hover:scale-[110%]" data-aos="fade-left">
+            {/* <img src={image} className="w-full h-full"   /> */}
             <div className={`h-full w-full ${image} bg-cover bg-no-repeat`} />
           </div>
         )}

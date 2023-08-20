@@ -29,10 +29,10 @@ export function SectionTwo() {
         </div>
 
         {/* ----------- Credit card -----------*/}
-        <div className="credit-card absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+        <div className="credit-card absolute bottom-0 left-[70rem] right-0 top-0 flex items-center justify-center">
           <img
             src={creditCard}
-            width={280}
+            width={400}
             height={'100%'}
             data-aos="fade-up"
             alt="Cartão de crédito - Liberte-se das limitações financeiras e desfrute da liberdade de compra"
@@ -42,7 +42,7 @@ export function SectionTwo() {
         {/* ----------- Right bg -----------*/}
         <div className="flex w-full lg:w-[40rem]">
           <div
-            className={`h-[500px] w-full bg-[url('/assets/images/dog.jpeg')] bg-cover bg-no-repeat`}
+            className={`h-[500px] w-full  bg-cover bg-no-repeat`}
           />
         </div>
       </div>

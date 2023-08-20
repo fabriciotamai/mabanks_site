@@ -3,6 +3,7 @@ import { MoveRight } from 'lucide-react';
 
 // Images
 import cardLogo from '/assets/images/card-logo.png';
+import Caard from '../../assets/icons/logo.svg';
 
 // Components
 import { Card } from '../../components/Card';
@@ -34,7 +35,7 @@ export function SectionThree() {
                 btnType={true}
                 btnTitle="Saiba mais"
                 btnColor="desktop"
-                logo={cardLogo}
+                logo={Caard}
                 btnIcon={<MoveRight />}
                 title="Receba pagamentos com agilidade."
                 description="Aproveite todas as vantagens do Ma Banks com o Titan, o nosso plano completo."
@@ -59,8 +60,8 @@ export function SectionThree() {
                 titleStyle="w-[50%]"
                 descStyle="w-[70%]"
                 logoStyle="!hidden"
-                mainContainerStyle="!bg-[#171717]"
-                image="bg-[url('/assets/images/card-image.jpeg')]"
+                mainContainerStyle="!bg-[#000]"
+                image="bg-[url('/assets/images/foto_site.jpg')]"
               />
             </div>
           </div>
@@ -107,14 +108,14 @@ export function SectionThree() {
                   btnType={true}
                   btnTitle="Saiba mais"
                   btnColor="desktop"
-                  logo={cardLogo}
+                  logo={Caard}
                   btnIcon={<MoveRight />}
                   title="Economize tempo com o Ma Banks."
                   description="Diga adeus às filas de pedágio e estacionamentos."
                   btnUrl="#"
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
-                  mainContainerStyle="bg-[BABABA]"
+                  mainContainerStyle="bg-[#444444]"
                   btnContainerStyle="hidden"
                   image="bg-[url('/assets/images/card-image.png')]"
                 />

@@ -97,6 +97,7 @@ export function NavBar() {
           <img
             src={logoMobile}
             width={55}
+
             height={45}
             alt="Logo da Ma Banks - Serviços financeiros modernos"
           />

@@ -30,7 +30,7 @@ export function SectionFour() {
           {/* <div
             className={`h-[500px] w-full  bg-cover bg-no-repeat`}
           /> */}
-          <img src={IconCredit} width={400} height={200} className="ml-28" />
+          <img src={IconCredit} width={400} height={200} className="ml-28"  data-aos="fade-up" />
         </div>
       </div>
     </div>
