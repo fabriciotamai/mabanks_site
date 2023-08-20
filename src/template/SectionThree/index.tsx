@@ -99,7 +99,7 @@ export function SectionThree() {
                   logoStyle="hidden"
                   titleStyle="xl:w-[80%]"
                   descStyle="w-[80%]"
-                  mainContainerStyle="bg-[#828282]"
+                  mainContainerStyle="bg-[#201f1f]"
                 />
               </div>
 

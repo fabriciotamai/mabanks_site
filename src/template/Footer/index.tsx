@@ -16,7 +16,7 @@ export function Footer() {
   const { handleSetCompany } = useMyContext();
 
   return (
-    <div className="flex flex-col bg-black px-10 pt-5 text-base text-stone-300 lg:px-20">
+    <div className="flex flex-col bg-black px-10 pt-10 text-base text-stone-300 lg:px-20">
       <div className="footer-head flex flex-col justify-between gap-8 lg:flex-row ">
         <div className="infos">
           <a href="/" className="flex justify-center lg:justify-normal">

@@ -7,7 +7,7 @@ import IconCredit from '../../assets/images/cardPngcredit.png'
 
 export function SectionFour() {
   return (
-    <div className="relative mt-10 gap-28 bg-[#828282] text-white">
+    <div className="relative mt-28 gap-28 bg-[#828282] text-white">
       <div className="gap-3xl flex flex-col items-center justify-between lg:flex-row lg:pl-[2%] xl:pl-[18%]">
         {/* ----------- Left text -----------*/}
         <div className="z-[1] mt-10 flex w-[80%] text-center sm:w-[50%] lg:mt-0 lg:w-1/4 lg:text-left xl:w-1/4">

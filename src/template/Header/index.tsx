@@ -10,7 +10,7 @@ import { MoveRight } from 'lucide-react';
 export function Header() {
   return (
     <>
-      <div className="relative h-screen w-full bg-[url('/assets/images/empresario.png')] bg-cover">
+      <div className="relative h-screen w-full bg-[url('/assets/images/empresario.png')] bg-cover bg-no-repeat">
         <div className="absolute left-0 top-0 z-[1] h-screen w-full bg-black/40" />
         {/* Video */}
         {/* <video
@@ -26,7 +26,7 @@ export function Header() {
         <div className="absolute bottom-0 left-[10%] right-0 top-0 z-[1] flex items-center sm:left-[18%]">
           <SectionText
             title="O caminho para o sucesso começa por aqui."
-            description="Sua proteção é nossa prioridade. Venha para nosso banco!"
+            description="Sua segurança é nossa prioridade. Venha para nosso banco!"
             btnType={false}
             btnTitle="Conheça os nossos produtos"
             btnIcon={<MoveRight width={20} height={20} />}

@@ -31,7 +31,7 @@ export function SectionText({
   btnContainerStyle,
 }: SectionTextProps) {
   return (
-    <div className={`${boxStyle} flex flex-col gap-y-7 font-medium`}>
+    <div className={`${boxStyle} flex flex-col gap-y-7   font-medium`}>
       <div className={`flex flex-col gap-y-4`}>
         {/* Title */}
         <h1 className={titleStyle}>{title ? title : 'Lorem ipsum dolor'}</h1>

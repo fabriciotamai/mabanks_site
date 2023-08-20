@@ -198,7 +198,7 @@ export function SectionSix() {
     <div
       id="planos"
       className={`${
-        company ? 'bg-stone-500' : 'bg-red-400'
+        company ? 'bg-[#3B3B3B]' : 'bg-[#585656]'
       } mt-20 flex flex-col items-center gap-5 overflow-x-hidden pb-20 pt-24`}
     >
       {/* ----------- Title -----------*/}

@@ -10,7 +10,7 @@ export function FormRegister() {
       {/* ----------- Title -----------*/}
       <h1 className="text-md mb-10 flex justify-center font-medium text-neutral-950">
         <b>CADASTRE</b>
-        <span className="ml-2 border-b-2 border-red-400">UMA CONTA</span>
+        <span className="ml-2 border-b-2 border-[#383535]">UMA CONTA</span>
       </h1>
 
       {/* ----------- Form login -----------*/}
@@ -107,7 +107,7 @@ export function FormRegister() {
         <Link
           to="/login"
           className="w-1/11 mt-6 flex justify-center border-b-2
-          border-red-400 text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
+          border-[#333232] text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
         >
           Já tem uma conta? Entrar
         </Link>

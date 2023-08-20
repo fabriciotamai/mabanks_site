@@ -10,7 +10,7 @@ export function FormLogin() {
       {/* ----------- Title -----------*/}
       <h1 className="text-md mb-10 flex justify-center font-medium text-neutral-950">
         <b>ACESSE</b>
-        <span className="ml-2 border-b-2 border-red-400">SUA CONTA</span>
+        <span className="ml-2 border-b-2 border-[#565454]">SUA CONTA</span>
       </h1>
 
       {/* ----------- Form login -----------*/}
@@ -70,7 +70,7 @@ export function FormLogin() {
         <Link
           to="/register"
           className="w-1/11 mt-6 flex justify-center border-b-2
-          border-red-400 text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
+          border-[#565454] text-neutral-950/75 hover:border-red-500 hover:text-neutral-950"
         >
           Não tem uma conta? Cadastrar
         </Link>

@@ -22,10 +22,10 @@ export function AppDownload({
       <h1 className="text-lg font-semibold text-[#828282]">{title}</h1>
       <div className="mt-1 flex flex-row items-center gap-7">
         <a href={urlGoogle}>
-          <img className="h-auto w-52" alt={altGoogle} src={iconGoogle} />
+          <img  alt={altGoogle} src={iconGoogle} width={120} height={40} />
         </a>
         <a href={urlApple}>
-          <img className="h-auto w-[11.6rem]" alt={altApple} src={iconApple} />
+          <img  alt={altApple} src={iconApple}  width={120} height={40} />
         </a>
       </div>
     </div>

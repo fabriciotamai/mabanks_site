@@ -23,7 +23,7 @@ export function Register() {
           </Link>
 
           <div className="flex flex-col items-center justify-center">
-            <h1 className="z-10 mt-10 w-[70%] font-Syne text-xl font-semibold text-red-400 sm:mt-0 md:w-1/2 md:text-4xl">
+            <h1 className="z-10 mt-10 w-[70%] font-Syne text-xl font-semibold text-white sm:mt-0 md:w-1/2 md:text-4xl">
               JUNTE-SE E DESFRUTE DA LIBERDADE FINANCEIRA
             </h1>
           </div>
@@ -33,7 +33,7 @@ export function Register() {
         <div className="mt-10 grid h-full grid-cols-1 items-center justify-items-center bg-white md:mt-0">
           <div className="flex w-full max-w-md flex-col px-2 sm:max-w-xl">
             <h1 className="mb-12 text-center font-Syne text-xl font-bold text-neutral-950">
-              <b className="mr-1 border-b-2 border-r-2 border-red-400 pr-1">
+              <b className="mr-1 border-b-2 border-r-2 border-[#494646] pr-1">
                 MA BANKS
               </b>
               Internet Banking
