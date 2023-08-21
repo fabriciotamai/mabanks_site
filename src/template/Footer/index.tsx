@@ -138,9 +138,9 @@ export function Footer() {
       </div>
 
       {/* ----------- Copyright & Terms -----------*/}
-      <div className="footer-bottom mt-6 flex flex-col flex-wrap justify-between border-t-[0.1rem] md:flex-row md:items-center lg:flex-nowrap">
-        <div className="flex flex-col gap-5 py-5 md:flex-row">
-          <h1 className="text-sm md:hidden">Siga Ma Banks</h1>
+      <div className="footer-bottom mt-6 hidden sm:flex flex-col flex-wrap justify-between border-t-[0.1rem] md:flex-row md:items-center lg:flex-nowrap ">
+        <div className="flex flex-col gap-5 py-5 md:flex-row flex-wrap ">
+          <h1 className="text-sm ">Siga Ma Banks</h1>
           <div className="social-icons flex gap-5">
             <a
               href="#"

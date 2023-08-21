@@ -1,6 +1,5 @@
 //
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+
 
 // Templates
 import { NavBar } from '../../template/NavBar';
@@ -15,7 +14,7 @@ import { SectionSix } from '../../template/SectionSix';
 
 export function Home() {
   return (
-    <>
+    <div className="w-full">
       <header>
         <nav>
           <NavBar />
@@ -24,7 +23,7 @@ export function Home() {
         <Header />
       </header>
 
-      <div>
+      <div className="w-full">
         <SectionOne />
         <SectionTwo />
         <SectionThree />
@@ -36,6 +35,6 @@ export function Home() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }
