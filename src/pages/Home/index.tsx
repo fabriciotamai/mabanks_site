@@ -24,7 +24,7 @@ export function Home() {
         <Header />
       </header>
 
-      <div className="content">
+      <div>
         <SectionOne />
         <SectionTwo />
         <SectionThree />

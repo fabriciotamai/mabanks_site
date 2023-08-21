@@ -10,8 +10,10 @@ import { MoveRight } from 'lucide-react';
 export function Header() {
   return (
     <>
-      <div className="relative h-screen w-full bg-[url('/assets/images/empresario.png')] bg-cover bg-no-repeat">
-        <div className="absolute left-0 top-0 z-[1] h-screen w-full bg-black/40" />
+      <div className="relative h-screen w-full md:bg-[url('/assets/images/empresario.png')] bg-cover bg-no-repeat">
+        <div className="relative  z-[1] h-full w-full bg-black/40">
+
+        </div>
         {/* Video */}
         {/* <video
           loop

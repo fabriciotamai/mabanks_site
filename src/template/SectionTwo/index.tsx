@@ -9,8 +9,8 @@ import { SectionText } from '../../components/SectionText';
 
 export function SectionTwo() {
   return (
-    <div className="relative  bg-[#171717] text-white">
-      <div className="gap-3xl flex flex-col items-center justify-between lg:flex-row lg:pl-[2%] xl:pl-[18%]">
+    <div className="relative  bg-[#171717] text-white flex  flex-row ">
+      <div className="gap-3xl flex flex-col items-center justify-between lg:flex-row lg:pl-[20%] xl:pl-[18%]">
         {/* ----------- Left text -----------*/}
         <div className="z-[1] mt-10 flex w-[80%] text-center sm:w-[50%] lg:mt-0 lg:w-1/4 lg:text-left xl:w-1/4">
           <SectionText
@@ -29,7 +29,13 @@ export function SectionTwo() {
         </div>
 
         {/* ----------- Credit card -----------*/}
-        <div className="credit-card absolute bottom-0 left-[70rem] right-0 top-0 flex items-center justify-center">
+        <div className="flex w-full lg:w-[10rem]">
+          <div
+            className={`h-[10px] w-full  bg-cover bg-no-repeat`}
+          />
+        </div>
+
+        <div className="credit-card  bottom-0  right-0 top-0 flex items-center justify-center">
           <img
             src={creditCard}
             width={400}
@@ -39,12 +45,9 @@ export function SectionTwo() {
           />
         </div>
 
+
         {/* ----------- Right bg -----------*/}
-        <div className="flex w-full lg:w-[40rem]">
-          <div
-            className={`h-[370px] w-full  bg-cover bg-no-repeat`}
-          />
-        </div>
+
       </div>
     </div>
   );

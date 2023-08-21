@@ -40,7 +40,7 @@ const sectionRowTwoData = [
 
 export function SectionOne() {
   return (
-    <div className="mx-auto flex flex-col justify-center gap-14 px-10 py-16 xl:flex-row xl:gap-40">
+    <div className=" flex flex-col justify-center gap-14 px-10 py-16 xl:flex-row xl:gap-40 ">
       {/* ----------- Left Texts -----------*/}
       <div className="text-base text-neutral-900 xl:w-[18rem] xl:pl-4 justify-center flex flex-col">
         <h1 className="max-w-sm text-2xl font-semibold mb-4">
