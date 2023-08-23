@@ -34,13 +34,13 @@ export function SectionText({
     <div className={`${boxStyle} flex flex-col gap-y-7   font-medium`}>
       <div className={`flex flex-col gap-y-4`}>
         {/* Title */}
-        <h1 className={titleStyle}>{title ? title : 'Lorem ipsum dolor'}</h1>
+        <h1 className={titleStyle}>{title ? title :null}</h1>
 
         {/* Description */}
         <p className={desStyle}>
           {description
             ? description
-            : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+            : null}
         </p>
       </div>
 

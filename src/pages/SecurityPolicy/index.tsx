@@ -26,7 +26,7 @@ export function SecurityPolicy() {
       <div className="mb-20 mt-20 flex w-full flex-col items-center">
         <div className="flex max-w-[990px] flex-col bg-[url('/assets/images/overlayBackground.png')] bg-fixed bg-center bg-no-repeat px-5 lg:px-0">
           <h1 className="text-center text-3xl font-medium">
-            Política de Segurança da Informação e Cibernética
+          Conta Protegida
           </h1>
 
           {/* Parte 1 */}

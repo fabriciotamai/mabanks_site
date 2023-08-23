@@ -22,6 +22,8 @@ export function NavBar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrollInPosition, setScrollInPosition] = useState(false);
   const { handleSetCompany } = useMyContext();
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState('');
 
   // Scroll to plans on click
   useEffect(() => {
@@ -33,6 +35,17 @@ export function NavBar() {
       sectionPlan.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
+
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+    toggleDropdown();
+    // Aqui você pode executar qualquer lógica adicional relacionada ao item selecionado
+  };
 
   // Change the logo based on the window size (mobile).
   useEffect(() => {
@@ -123,6 +136,45 @@ export function NavBar() {
             Para você
           </a>
         </li>
+        <button
+        onClick={toggleDropdown}
+        className="text-stone-300 hover:text-white focus:outline-none"
+      >
+        {isOpen && (
+        <ul className={`absolute left-[46%] transform -translate-x-1/2  border-r border-l border-b  py-1 px-4  rounded   shadow-lg  ${scrollInPosition ? 'fixed z-50 bg-neutral-900 top-20 ' : 'absolute top-16'}`}>
+          <li className="py-1 px-4 hover:bg-gray-800">
+            <a href="/conta-protegida" onClick={() => handleItemClick('Opção 1')}>
+             O que é ?
+            </a>
+          </li>
+          <li className="py-1 px-4 hover:bg-gray-800">
+            <a href="/movimentar-recurso" onClick={() => handleItemClick('Opção 2')}>
+            Recursos?
+            </a>
+          </li>
+          <li className="py-1 px-4 hover:bg-gray-800">
+            <a href="/Debts" onClick={() => handleItemClick('Opção 3')}>
+            Dïvidas
+            </a>
+          </li>
+          <li className="py-1 px-4 hover:bg-gray-800">
+            <a href="/ServicesPayment" onClick={() => handleItemClick('Opção 3')}>
+            Pagadoria
+            </a>
+          </li>
+        </ul>
+      )}
+
+
+
+        <li className="delay-5 transition ease-in hover:text-white">
+          <p >Conta protegida</p>
+        </li>
+        </button>
+
+        <li className="delay-5 transition ease-in hover:text-white">
+          <a href="/contato">Cobrança</a>
+        </li>
 
         <li className="delay-5 transition ease-in hover:text-white">
           <a href="/contato">Contato</a>
@@ -131,7 +183,7 @@ export function NavBar() {
 
       <ul className="flex items-center gap-7 text-white">
         <li className="delay-5 hidden text-stone-300 transition ease-in hover:text-white lg:flex">
-          <a href="/quem-somos">Quem somos</a>
+          <a href="/quem-somos"></a>
         </li>
 
         <li className="hidden hover:text-white lg:flex">

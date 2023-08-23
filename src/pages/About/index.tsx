@@ -26,7 +26,7 @@ export function About() {
         titleStyle="text-3xl sm:w-[50%] spacing-1 leading-[1.3] pt-20"
         desStyle="w-[70%] sm:w-full"
         btnStyle="bg-neutral-950 hover:text-neutral-950 hover:bg-white hidden"
-        bgUrl="/assets/images/pictureWhymy.jpg"
+        bgUrl="/assets/images/pictureacess.jpg"
       />
 
       <div className="mx-auto mb-20 mt-20 flex flex-col justify-between lg:max-w-[64%] lg:flex-row">

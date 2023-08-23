@@ -1,5 +1,4 @@
-// Videos
-import homeBg from '/assets/videos/home-bg.mp4';
+
 
 // Components
 import { SectionText } from '../../components/SectionText';
@@ -10,7 +9,7 @@ import { MoveRight } from 'lucide-react';
 export function Header() {
   return (
     <>
-      <div className="relative h-screen w-full md:bg-[url('/assets/images/empresario.png')] bg-cover bg-no-repeat">
+      <div className="relative h-screen w-full md:bg-[url('/assets/images/empresario.png')] bg-[url('/assets/images/bgMobile.png')]  bg-cover bg-no-repeat">
         <div className="relative  z-[1] h-full w-full bg-black/40">
 
         </div>

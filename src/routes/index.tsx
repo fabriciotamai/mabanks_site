@@ -9,6 +9,10 @@ import { About } from '../pages/About';
 import { PrivacyPolicy } from '../pages/PrivacyPolicy';
 import { SecurityPolicy } from '../pages/SecurityPolicy';
 import { PageNotFound } from '../pages/PageNotFound';
+import { AccountSecurity} from '../pages/AccountSecurity/'
+import { MooveResource } from '../pages/MooveResource';
+import {ServicesPayment} from '../pages/ServicesPayment';
+import {Debts} from '../pages/Debts';
 
 export default function AppRoutes() {
   return (
@@ -21,7 +25,12 @@ export default function AppRoutes() {
         <Route path="/quem-somos" element={<About />} />
         <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
         <Route path="/politica-de-seguranca" element={<SecurityPolicy />} />
+        <Route path="/conta-protegida" element={<AccountSecurity />} />
+        <Route path="/movimentar-recurso" element={<MooveResource />} />
+        <Route path="/ServicesPayment" element={<ServicesPayment />} />
+        <Route path="/Debts" element={<Debts />} />
         <Route path="*" element={<PageNotFound />} />
+
       </Routes>
     </BrowserRouter>
   );
