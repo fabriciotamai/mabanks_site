@@ -141,7 +141,7 @@ export function NavBar() {
         className="text-stone-300 hover:text-white focus:outline-none"
       >
         {isOpen && (
-        <ul className={`absolute left-[40%] transform -translate-x-1/2  border-r border-l border-b border-[#3e3d3d]  py-1 px-4     shadow-lg  ${scrollInPosition ? 'fixed z-50 bg-neutral-900 top-16 ' : 'absolute top-16'}`}>
+        <ul className={`absolute left-[39%] transform -translate-x-1/2  border-r border-l border-b border-[#3e3d3d]  py-1 px-4     shadow-lg  ${scrollInPosition ? 'fixed z-50 bg-neutral-900 top-[4rem] rounded-bl-lg rounded-br-lg' : 'absolute top-16 rounded-bl-lg rounded-br-lg'}`}>
           <li className="py-1 px-4 hover:bg-gray-800">
             <a href="/conta-protegida" onClick={() => handleItemClick('Opção 1')}>
              O que é ?
