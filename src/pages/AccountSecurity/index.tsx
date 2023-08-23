@@ -54,7 +54,7 @@ export function AccountSecurity() {
 
           {/* Parte 2 */}
           <h2 className="mb-2 mt-6 text-lg font-semibold">
-            1. O que é
+            O que é
           </h2>
           <p className="mt-4 text-base">
           Sabemos o quanto é desafiador lidar com bloqueios judiciais e a pressão que isso pode exercer sobre o fluxo de caixa de uma empresa. É por isso que desenvolvemos um pacote completo de serviços e benefícios, projetados especificamente para proteger seus ativos financeiros e preservar a continuidade das suas operações.

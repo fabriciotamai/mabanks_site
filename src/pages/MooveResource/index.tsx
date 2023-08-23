@@ -53,10 +53,10 @@ export function MooveResource() {
 
           {/* Parte 2 */}
           <h2 className="mb-2 mt-6 text-lg font-semibold">
-          1.2. Posso movimentar meus recursos?
+           Posso movimentar meus recursos?
           </h2>
           <p className="mt-4 text-base">
-          1.1. Sim, você movimenta seus recursos normalmente. Lembramos que apenas o correntista detentor do login e senha realiza movimentações financeiras, nós não temos meios de movimentar a conta pelo cliente porque somos uma instituição formalmente estabelecida.
+          Sim, você movimenta seus recursos normalmente. Lembramos que apenas o correntista detentor do login e senha realiza movimentações financeiras, nós não temos meios de movimentar a conta pelo cliente porque somos uma instituição formalmente estabelecida.
 Voltando ao nosso conceito inicial, a ideia é que você retome o controle da sua empresa, portanto, nada mais natural de que somente o titular da conta possa movimentá-la.
           </p>
           <p className="mt-4 text-base">
@@ -66,10 +66,10 @@ Voltando ao nosso conceito inicial, a ideia é que você retome o controle da su
           Usando essa ferramenta, você tem a tranquilidade de saber que seus ativos financeiros estão seguros. É rápido, fácil e muito eficiente! Entre em contato conosco e saiba mais sobre como proteger seus ativos financeiros com a conta protegida. Não deixe que bloqueios sejam um problema para você e para sua empresa
           </p>
           <h2 className="mb-2 mt-6 text-lg font-semibold">
-          2. Proteções adicionais
+          Proteções adicionais
           </h2>
           <p className="mt-4 text-base">
-          2.1.	Monitoramento de Processos
+          Monitoramento de Processos
 Nossos sistemas monitoram em tempo real qualquer movimentação que possa implicar em bloqueio do seu saldo, o que permite que nossos clientes consigam se prevenir de possíveis ameaças.
           </p>
 

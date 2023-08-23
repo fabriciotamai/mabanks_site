@@ -53,7 +53,7 @@ export function Debts() {
 
           {/* Parte 2 */}
           <h2 className="mb-2 mt-6 text-lg font-semibold">
-          3.0 Negociação de dívidas
+            Negociação de dívidas
           </h2>
           <p className="mt-4 text-base">
           Aqui nós compramos sua briga! Temos uma equipe de negociadores profissionais pronta para negociar seus débitos, garantindo que sua empresa honre com seus compromissos da maneira mais justa.
