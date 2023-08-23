@@ -125,23 +125,23 @@ export function NavBar() {
       </a>
 
       <ul className="hidden gap-7 text-xs text-stone-300 lg:text-sm xl:flex xl:text-base">
-        <li className="delay-5 transition ease-in hover:text-white">
+        {/* <li className="delay-5 transition ease-in hover:text-white">
           <a href="/#planos" onClick={() => handleSetCompany(true)}>
             Para sua empresa
           </a>
-        </li>
+        </li> */}
 
-        <li className="delay-5 transition ease-in hover:text-white">
+        {/* <li className="delay-5 transition ease-in hover:text-white">
           <a href="/#planos" onClick={() => handleSetCompany(false)}>
             Para você
           </a>
-        </li>
+        </li> */}
         <button
         onClick={toggleDropdown}
         className="text-stone-300 hover:text-white focus:outline-none"
       >
         {isOpen && (
-        <ul className={`absolute left-[46%] transform -translate-x-1/2  border-r border-l border-b  py-1 px-4  rounded   shadow-lg  ${scrollInPosition ? 'fixed z-50 bg-neutral-900 top-20 ' : 'absolute top-16'}`}>
+        <ul className={`absolute left-[40%] transform -translate-x-1/2  border-r border-l border-b border-[#3e3d3d]  py-1 px-4     shadow-lg  ${scrollInPosition ? 'fixed z-50 bg-neutral-900 top-16 ' : 'absolute top-16'}`}>
           <li className="py-1 px-4 hover:bg-gray-800">
             <a href="/conta-protegida" onClick={() => handleItemClick('Opção 1')}>
              O que é ?

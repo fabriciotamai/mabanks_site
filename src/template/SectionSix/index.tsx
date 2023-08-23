@@ -221,7 +221,7 @@ export function SectionSix() {
         className="w-[97%] py-5 text-base text-white sm:w-[85%] lg:w-[50%]"
         data-aos="zoom-out"
       >
-        <table>
+        {/* <table>
           <thead>
             <tr className="font-Syne font-semibold sm:text-2xl">
               <td
@@ -307,7 +307,7 @@ export function SectionSix() {
               </tbody>
             );
           })}
-        </table>
+        </table> */}
       </div>
     </div>
   );
