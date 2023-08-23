@@ -26,7 +26,7 @@ export function Contact() {
         titleStyle="text-4xl sm:w-[50%] spacing-1 leading-[1.3] pt-20"
         desStyle="w-[70%] sm:w-full"
         btnStyle="bg-neutral-950 hover:text-neutral-950 hover:bg-white hidden"
-        bgUrl="/assets/images/contact-bg.png"
+        bgUrl="/assets/images/contact.png"
       />
 
       <div className="mb-20 mt-20 flex flex-row flex-wrap lg:max-w-[92%]">
