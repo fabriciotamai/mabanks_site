@@ -25,11 +25,11 @@ export function Home() {
 
       <div className="w-full">
         <SectionOne />
-        <SectionTwo />
-        <SectionThree />
+        {/* <SectionTwo /> */}
+        {/* <SectionThree /> */}
         <SectionFour />
         <SectionFive />
-        <SectionSix />
+        {/* <SectionSix /> */}
       </div>
 
       <footer>

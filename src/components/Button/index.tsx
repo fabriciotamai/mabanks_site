@@ -36,7 +36,7 @@ export function Button({
     <a
       href={url}
       id="button"
-      className={`${colorVariants[color]} flex items-center justify-center gap-2 rounded border-transparent px-4 py-2`}
+      className={`${colorVariants[color]} flex items-center justify-center gap-2 rounded border-transparent px-4 py-4`}
     >
       <p className="text-sm">{title}</p>
       <span>{icon}</span>

@@ -32,7 +32,7 @@ export function SectionText({
 }: SectionTextProps) {
   return (
     <div className={`${boxStyle} flex flex-col gap-y-7   font-medium`}>
-      <div className={`flex flex-col gap-y-4`}>
+      <div className={`flex flex-col gap-y-2`}>
         {/* Title */}
         <h1 className={titleStyle}>{title ? title :null}</h1>
 
@@ -45,7 +45,7 @@ export function SectionText({
       </div>
 
       {/* Button */}
-      <div className={`${btnContainerStyle} flex`}>
+      <div className={`${btnContainerStyle} flex `}>
         <Button
           type={btnType}
           title={btnTitle}

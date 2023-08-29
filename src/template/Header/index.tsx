@@ -10,7 +10,7 @@ export function Header() {
   return (
     <>
       <div className="relative h-screen w-full md:bg-[url('/assets/images/empresario.png')] bg-[url('/assets/images/bgMobile.png')]  bg-cover bg-no-repeat">
-        <div className="relative  z-[1] h-full w-full bg-black/40">
+        <div className="relative  z-[1] h-full w-full bg-gradient-to-r from-black/90 to-black/20">
 
         </div>
         {/* Video */}
@@ -24,19 +24,20 @@ export function Header() {
         </video> */}
 
         {/* SectionText component */}
-        <div className="absolute bottom-0 left-[10%] right-0 top-0 z-[1] flex items-center sm:left-[18%]">
+        <div className="absolute bottom-0 left-[10%] right-0 top-0 z-[1] flex items-center sm:left-[14%]">
           <SectionText
             title="O caminho para o sucesso começa por aqui."
             description="Sua segurança é nossa prioridade. Venha para nosso banco!"
             btnType={false}
             btnTitle="Conheça os nossos produtos"
-            btnIcon={<MoveRight width={20} height={20} />}
+            btnIcon={<MoveRight width={20} height={20}  />}
             btnColor="desktop"
             btnUrl="#"
+
             boxStyle="text-white"
-            titleStyle="text-5xl sm:w-[70%] spacing-1 leading-[1.3]"
-            desStyle="w-[70%] sm:w-full"
-            btnStyle="bg-neutral-950 hover:text-neutral-950 hover:bg-white"
+            titleStyle="text-4xl sm:w-[70%] spacing-1 leading-[1.3]"
+            desStyle="w-[70%] sm:w-full text- pt-4"
+            btnStyle="bg-neutral-950 hover:text-neutral-950 hover:bg-white "
           />
         </div>
       </div>

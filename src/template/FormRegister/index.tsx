@@ -26,7 +26,7 @@ export function FormRegister() {
               >
                 Nome
               </label>
-              <Input id="name" placeholder="Fulano" />
+              <Input id="name" placeholder="Nome" />
             </div>
 
             {/* Input sobrenome */}
@@ -49,7 +49,7 @@ export function FormRegister() {
             >
               Telefone
             </label>
-            <Input id="phone" placeholder="(41) 000000-000" />
+            <Input id="phone" placeholder="(00) 000000-000" />
           </div>
 
           {/* Input e-mail */}
@@ -64,7 +64,7 @@ export function FormRegister() {
           </div>
 
           {/* Input CPF */}
-          <div className="email mb-5 flex flex-col">
+          {/* <div className="email mb-5 flex flex-col">
             <label
               htmlFor="cpf"
               className="text-base text-neutral-950 after:text-red-400 after:content-['*']"
@@ -72,10 +72,10 @@ export function FormRegister() {
               CPF
             </label>
             <Input id="cpf" placeholder="000.000.000-00" />
-          </div>
+          </div> */}
 
           {/* Input password */}
-          <div className="email flex flex-col">
+          {/* <div className="email flex flex-col">
             <label
               htmlFor="password"
               className="text-base text-neutral-950 after:text-red-400 after:content-['*']"
@@ -87,7 +87,7 @@ export function FormRegister() {
               type="password"
               placeholder="Digite sua senha"
             />
-          </div>
+          </div> */}
         </form>
       </div>
 
