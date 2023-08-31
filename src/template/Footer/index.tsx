@@ -30,8 +30,8 @@ export function Footer() {
 
           <div className="address mt-10">
             <h2 className="mb-1 font-semibold text-white">Ma Banks</h2>
-            <p>Av. Orod Maia, 1312, Cambí, Jamaica - JM</p>
-            <p className="mb-4 mt-4">CEP: 11.067-021</p>
+            <p>Rua Nossa Senhora de Nazaré</p>
+            <p className="mb-4 mt-4">CEP: 82540-130</p>
             <h2>Central de Atendimento:</h2>
             <p>0800 851 2001</p>
             <p>2005-0111</p>

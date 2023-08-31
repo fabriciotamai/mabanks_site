@@ -110,7 +110,7 @@ export function NavBar() {
           <img
             src={logoMobile}
             width={55}
-            className="shadow-lg shadow-red-300 z-50"
+            className="shadow-lg   z-50"
 
             height={45}
             alt="Logo da Ma Banks - Serviços financeiros modernos"
